@@ -1,0 +1,119 @@
+:root {
+    --mainColor: #009ad8;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    color: rgba(0, 0, 0, 0.651) !important;
+}
+
+/* ================ Nav Start =============== */
+.logo-text span,
+.navbar-nav .nav-link {
+    font-size: 0.85rem;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.2rem 1.2rem !important;
+    margin: 0.2rem 0.3rem !important;
+    font-weight: 500;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+}
+
+nav,
+footer {
+    background-color: rgba(24, 17, 17, 0.103) !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .active {
+    border: 2px solid var(--mainColor);
+    border-radius: 50rem;
+    color: var(--mainColor) !important;
+}
+
+/* ================ Nav end =============== */
+
+/* ================ Header Start =============== */
+
+/* .Header {
+    background-image: url(../imgs/3.jpg) !important;
+} */
+
+.search-container input {
+    padding: 1.25rem 3.125rem 1.25rem 1.25rem;
+}
+
+.search-container input:focus {
+    box-shadow: none;
+}
+
+.search-container button {
+    top: 0.3125rem;
+    right: 0.3125rem;
+    bottom: 0.3125rem;
+    padding: 0px 2.5rem;
+}
+
+.weather-center,
+.weather-left,
+.weather-right {
+    box-shadow: 0px 0px 2px black;
+}
+
+#currentDegree {
+    font-size: 4.89rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width:767px) and (max-width:992px) {
+
+    #currentDegree {
+        font-size: 3.3rem;
+        font-weight: 600;
+    }
+}
+
+.nextDay-degree p {
+    font-size: 2.42rem;
+    font-weight: 500;
+}
+
+#humidity,
+#windKph,
+#windDirection {
+    font-size: 0.75rem !important;
+}
+
+/* ================ Header End=============== */
+
+/* ================ Footer Start =============== */
+.footer-icons i,
+.footer-icons a {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.icons {
+    background-color: #1e202b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px !important;
+    width: 45px !important;
+    border-radius: 50%;
+    margin-left: 8px;
+    color: var(--mainColor);
+    transition: all 0.3s;
+}
+
+.icons:hover {
+    background-color: var(--mainColor);
+    color: white;
+}
+
+/* ================ Footer End =============== */
